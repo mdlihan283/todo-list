@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="todo">
+      <div class="topTask">
+        <input type="text" placeholder="Enter Your New Task...." id="newTask" />
+        <input type="button" id="newTaskBtn" value="Add New" />
+      </div>
+      <div class="bottomTask">
+        <div class="domContainer">
+          <ul id="todoUl">
+            <li>
+              <label id="labelCont">Task Item </label>
+              <div class="btn">
+                <button id="Edit">Edit</button>
+                <button id="Delete">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="update">
+        <textarea
+          id="updateText"
+          cols="30"
+          placeholder="Enter your updated code!"
+          rows="5"
+        ></textarea>
+        <button id="updateBtn">Update</button>
+        <button id="Cancel">Cancel</button>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

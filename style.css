@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #2155cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#todo {
+  background: #ffffff;
+  width: 500px;
+  height: auto;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.topTask {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+input#newTask {
+  padding: 15px;
+  width: 60%;
+  border: 2px solid #2155cd;
+  border-radius: 5px;
+}
+input#newTask::focus {
+  border: 2px solid #2155cd;
+}
+input#newTaskBtn {
+  background: green;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: arial;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.domContainer ul {
+  list-style: none;
+}
+
+.domContainer ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.domContainer ul li label {
+  width: 65%;
+  font-size: 17px;
+  font-family: arial;
+  font-weight: 600;
+}
+
+#Edit,
+#Delete {
+  width: 47%;
+  padding: 10px;
+  color: #fff;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#Delete {
+  background: red;
+}
+
+textarea#updateText {
+  width: 57% !important;
+  padding: 10px;
+  font-size: 16px;
+  height: 60px;
+}
+
+button#updateBtn,
+button#Cancel {
+  background: green;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+button#Cancel {
+  background: red;
+}
+
+#update {
+  display: none;
+}
